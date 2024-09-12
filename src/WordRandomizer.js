@@ -8,7 +8,7 @@ const WordRandomizer = () => {
 
     useEffect(() => {
         const fetchWords = async () => {
-            const response = await fetch('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt');
+            const response = await fetch('https://raw.githubusercontent.com/mikehackworth/mnemonic-wordlist/master/wordlist.txt');
             const text = await response.text();
             const wordArray = text.split('\n');
             setWords(wordArray);
